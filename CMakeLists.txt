@@ -37,6 +37,7 @@ elseif(WIN32) # Windows
     ament_export_libraries(setupapi)
 endif()
 
+set_property(TARGET ${PROJECT_NAME} PROPERTY POSITION_INDEPENDENT_CODE ON)
 
 ## Include headers
 target_include_directories(${PROJECT_NAME} PRIVATE include)
